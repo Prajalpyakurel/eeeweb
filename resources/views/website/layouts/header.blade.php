@@ -9,7 +9,7 @@
         <span class="menu">
                     <li><a href="{{route('home')}}">Home</a></li>
                     <li><a href="{{route('aboutus')}}">About Us</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="{{route('service')}}">Services</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="">Contact</a></li>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>

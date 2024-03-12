@@ -14,4 +14,8 @@ class FrontPageController extends Controller
     {
         return view('website.pages.aboutus');
     }
+    public function service()
+    {
+        return view('website.pages.service');
+    }
 }

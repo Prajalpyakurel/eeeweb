@@ -18,4 +18,6 @@ use App\Http\Controllers\FrontPageController;
 //});
 Route::get('/', [FrontPageController::class, 'index'])->name('home');
 Route::get('/about', [FrontPageController::class, 'about'])->name('aboutus');
+Route::get('/service', [FrontPageController::class, 'service'])->name('service');
+
 
