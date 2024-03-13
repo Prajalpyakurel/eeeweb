@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\FrontPageController;
 
 
 /*
@@ -47,3 +48,9 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
 
 
 });
+
+
+//frotnend
+Route::get('/', [FrontPageController::class, 'index'])->name('home');
+Route::get('/about', [FrontPageController::class, 'about'])->name('aboutus');
+Route::get('/service', [FrontPageController::class, 'service'])->name('service');
