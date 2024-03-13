@@ -131,7 +131,9 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
+        
         <div class="swiper-button-next">
             <img src="{{ asset('svg-images/arrow-right.svg') }}" alt="">
         </div>
