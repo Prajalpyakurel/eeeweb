@@ -59,6 +59,12 @@
                         <span class="link-title">Dashboard</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{route('admin.employee')}}" class="nav-link">
+                        <i class="link-icon" data-feather="box"></i>
+                        <span class="link-title">Employee</span>
+                    </a>
+                </li>
                 <li class="nav-item nav-category">web apps</li>
                 <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
@@ -640,6 +646,14 @@
 <!-- Custom js for this page -->
 <script src="{{asset('assets/js/dashboard-dark.j')}}"></script>
 <!-- End custom js for this page -->
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.2/css/dataTables.dataTables.css" />
+
+<script src="https://cdn.datatables.net/2.0.2/js/dataTables.js"></script>
+<script>
+    $(document).ready( function () {
+        $('#myTable').DataTable();
+    } );
+</script>
 
 </body>
 </html>

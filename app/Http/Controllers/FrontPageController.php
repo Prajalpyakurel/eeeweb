@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Employee;
 
 class FrontPageController extends Controller
 {
@@ -12,6 +13,11 @@ class FrontPageController extends Controller
     }
     public function about()
     {
-        return view('website.pages.aboutus');
+        $employees = Employee::all();
+        return view('website.pages.aboutus',compact('employees'));
+    }
+    public function service()
+    {
+        return view('website.pages.service');
     }
 }

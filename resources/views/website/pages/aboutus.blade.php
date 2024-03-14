@@ -113,50 +113,21 @@
                         <p>
                             "Empowering Innovation, Uniting Excellence: Together We Tech!"</p>
                     </div>
+                    @for ($i = 0; $i < count($employees); $i++)
                     <div class="col-lg-4 col-sm-6">
-                        <div class="item"> <span class="icon feature_box_col_one"><img src="{{asset('pp.png')}}" alt=""></span>
-                            <h6>Mr Rajan Pyakurel</h6>
-                            <h6>CEO & Co-Founder</h6>
+                        <div class="item"> <span class="icon feature_box_col_one"><img src="{{ asset('images/' . $employees[$i]->image) }}" alt=""></span>
+                            <h6>{{ $employees[$i]->name }}</h6>
+                            <h6>{{ $employees[$i]->designation }}</h6>
+                            <h6>{{$employees[$i]->email}}</h6>
+                            <p>{{ $employees[$i]->about }}</p>
+                            {{-- <p>We use latest technology for the latest world because we know the demand of peoples.</p> --}}
 
-                            <p>Rajan’s passion, curiosity, and experience in technology and business has made him a competitive CEO for this organization.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="item"> <span class="icon feature_box_col_two"><img src="{{asset('pp.png')}}" alt=""></span>
-                            <h6>Mr. Uttam Thapa</h6>
-                            <h6>Chief Marketing Officer (CMO)</h6>
 
-                            <p>He successfully forwards various projects from the Japanese market. Good understanding of client requirements, communication skills through multiple languages, and good collaboration skills made him a responsible CMO (Chief Marketing Officer)</p>
+                            {{-- <p>Rajan’s passion, curiosity, and experience in technology and business has made him a competitive CEO for this organization.</p> --}}
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="item"> <span class="icon feature_box_col_three"><img src="{{asset('pp.png')}}" alt=""></span>
-                            <h6>Miss.Sirjana Kapri</h6>
-                            <h6>Chief Financial Officer (CFO)</h6>
-                            <p>She has a deep understanding of her responsibility for the planning, implementation, managing, and running of all the finance activities of a company including business planning, budgeting, forecasting, and negotiations.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="item"> <span class="icon feature_box_col_five"><img src="{{asset('pp.png')}}" alt=""></span>
-                            <h6>Mr. Prajal Pyakurel</h6>
-                            <h6>Marketing Executive</h6>
-                            <P>A versatile professional serving as both a skilled developer and a strategic marketing executive at our company. With a passion for coding and a keen understanding of market trends, he bring a unique blend of technical expertise and business acumen to our team.</P>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="item"> <span class="icon feature_box_col_five"><img src="{{asset('pp.png')}}" alt=""></span>
-                            <h6>Mr. Prajal Pyakurel</h6>
-                            <h6>Marketing Executive</h6>
-                            <P>A versatile professional serving as both a skilled developer and a strategic marketing executive at our company. With a passion for coding and a keen understanding of market trends, he bring a unique blend of technical expertise and business acumen to our team.</P>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="item"> <span class="icon feature_box_col_five"><img src="{{asset('pp.png')}}" alt=""></span>
-                            <h6>Mr. Prajal Pyakurel</h6>
-                            <h6>Marketing Executive</h6>
-                            <P>A versatile professional serving as both a skilled developer and a strategic marketing executive at our company. With a passion for coding and a keen understanding of market trends, he bring a unique blend of technical expertise and business acumen to our team.</P>
-                        </div>
-                    </div>
+                    @endfor
+                   
 
                 </div>
             </div>
@@ -177,9 +148,114 @@
             </div>
         </div>
                 {{--end of our team --}}
+                <!--    End Our Story Section-->
+{{-- start of testimonial --}}
+<section class="testimonials-area" style="background-color: var(--soft-white);"> 
+    <div class="container-5">
+        <div class="items row">
+            <div class="col-lg-4">
+                <div class="testimonials-title">
+                    <h2 class="title">Our Students Review</h2>
+                    <span class="line"></span>
+                    <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need desire to obtain
+                        pain of itself, because it is pain de sires to obtain pain of itself occur</p>
+                </div>
+            </div>
+            <div class="col-lg-8 main">
+                <div class="testimonials-wrapper">
+                    <div class="testimonials-shape shape-1"></div>
+                    <div class="testimonials-shape shape-2"></div>
+                    <div class="testimonials-shape shape-3"></div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <div class="testimonials-image ">
+                            <div class="slick-list">
+                                <div class="slider slider-for">
+                                    <div>
+                                        <img src="{{asset('testimonials-1.webp')}}"  alt="">
+                                    </div>
+                                    <div>
+                                        <img src="{{asset('testimonials-1.webp')}}" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="{{asset('testimonials-3.webp')}}" alt="">
+                                    </div>
+                                </div>
 
+                            </div>
 
-    <!--    End Our Story Section-->
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="testimonials-content">
+                            <div class="slick-list ">
+                                <div class="slick-track  slider slider-nav"
+                                    style="opacity: 1; width: 2492px; transform: translate3d(-356px, 0px, 0px);">
+                                    <div class="single-testimonial-content" style="width: 356px;">
+                                        <div class="content-text">
+                                            <i class="fas fa-quote-right"></i>
+                                            <p>
+                                                Best pleasure rationally encounter consequences that are very nice
+                                                a again is there anyone who loves or desires to obtain pain of
+                                                itself.
+                                            </p>
+                                        </div>
+                                        <div class="content-meta">
+                                            <img src="{{asset('man.png')}}" alt="">                                                <p class="name">Prajal Pyakurel</p>
+                                            <p class="designation">
+                                                CEO, Xelopex Group
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class=" single-testimonial-content " style="width: 356px;">
+                                        <div class="content-text">
+                                            <i class="fas fa-quote-right"></i>
+                                            <p>
+                                                Best pleasure rationally encounter consequences that are very nice
+                                                a again is there anyone who loves or desires to obtain pain of
+                                                itself.
+                                            </p>
+                                        </div>
+                                        <div class="content-meta">
+                                            <img src="{{asset('man.png')}}" alt="">                                                <p class="name">Manish Karki</p>
+                                            <p class="designation">
+                                                CEO, Xelopex Group
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class=" single-testimonial-content " style="width: 356px;">
+                                        <div class="content-text">
+                                            <i class="fas fa-quote-right"></i>
+                                            <p>
+                                                Best pleasure rationally encounter consequences that are very nice
+                                                a again is there anyone who loves or desires to obtain pain of
+                                                itself.
+                                            </p>
+                                        </div>
+                                        <div class="content-meta">
+                                            <img src="{{asset('man.png')}}" alt="">
+                                            <p class="name">Alex Smith</p>
+                                            <p class="designation">
+                                                CEO, Xelopex Group
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    
 
 <div style="height:1080px;"></div>
 

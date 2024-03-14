@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\FrontPageController;
+use App\Http\Controllers\EmployeeController;
 
 
 /*
@@ -45,6 +46,9 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
     });
     Route::get('dashboard',[AdminController::class,'admin'])->name('dashboard');
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
+    Route::get('employee', [EmployeeController::class, 'index'])->name('employee');
+    Route::get('createemployee', [EmployeeController::class, 'create'])->name('createemployee');
+    Route::post('createemployee', [EmployeeController::class, 'store'])->name('storeemployee');
 
 
 });
@@ -54,3 +58,5 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
 Route::get('/', [FrontPageController::class, 'index'])->name('home');
 Route::get('/about', [FrontPageController::class, 'about'])->name('aboutus');
 Route::get('/service', [FrontPageController::class, 'service'])->name('service');
+
+
