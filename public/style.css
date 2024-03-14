@@ -1850,7 +1850,7 @@ h6 {
     padding-top: 40px;
 }
 
-.testimonials-title .l  ine {
+.testimonials-title .l ine {
     width: 150px;
     background: 0 0;
     border: 1px solid var(--primary-color);
@@ -2006,34 +2006,39 @@ h6 {
     width: 63px;
     height: 61px;
 }
-.title-2 h2{
+
+.title-2 h2 {
     font-size: 30px;
     font-weight: 600;
     line-height: 120%;
     font-weight: 800;
     color: var(--primary-color);
-  }
-  .title-2 span{
-    color: var(--secondary-color);
-  }
-  .section-experts {
-    overflow: hidden;
-  padding-top: 110px;
-  padding-bottom: 100px;
-  background-color: white;
-  position: relative;
-  height: 110vh;
 }
-.our-guide p{
+
+.title-2 span {
+    color: var(--secondary-color);
+}
+
+.section-experts {
+    overflow: hidden;
+    padding-top: 110px;
+    padding-bottom: 100px;
+    background-color: white;
+    position: relative;
+    height: 110vh;
+}
+
+.our-guide p {
     font-size: 18px;
     font-weight: 400;
-  line-height: 140%;
-  padding-top: 20px;
-  font-family: 'Exo', sans-serif;
-  text-align: justify;
+    line-height: 140%;
+    padding-top: 20px;
+    font-family: 'Exo', sans-serif;
+    text-align: justify;
 
 }
-.main-btn{
+
+.main-btn {
     text-decoration: none;
     background-color: #1e3686;
     color: #fff;
@@ -2050,52 +2055,182 @@ h6 {
     margin-top: 20px;
 
 }
-.main-btn:hover{
+
+.main-btn:hover {
     color: #fff;
     background-color: #007aff;
     text-decoration: none;
     transition: 0.5s linear;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .22);
 
 }
-.service-img img{
+
+.service-img img {
     width: 400px;
     border-radius: 20px;
     height: 660px;
 }
-.service-img{
+
+.service-img {
     margin-left: 100px;
 }
-.innovation-services{
+
+.innovation-services {
     overflow: hidden;
     padding-top: 10px;
     padding-bottom: 100px;
     background-color: white;
     position: relative;
-    height: 110vh;
+    height: 308vh;
 }
-.for-card-1st{
+
+.for-card-1st {
     border-radius: 1rem;
     background-color: rgb(244 244 246);
 }
-.first-img img{
+
+.first-img img {
     border-radius: 18px;
     width: 1557px;
     height: 250px;
 }
-.flex-content{
+
+.flex-content {
     padding: 40px 40px 40px 40px;
     gap: 10px;
 
 
 }
-.first-content{
+
+.first-content {
     margin-left: 30px;
 }
-.first-content .title-2 h2{
+
+.first-content .title-2 h2 {
     color: var(--secondary-color);
-  
+
 }
-.our-cntn{
+
+.our-cntn {
     font-size: 16px;
-  line-height: 140%;
+    line-height: 140%;
+}
+
+.slide-3 {
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    background-color: white;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+}
+
+.slide-img img {
+    border-radius: 15px;
+    width: 1120px;
+    height: 500px;
+
+}
+
+.slide-img {
+    position: absolute;
+}
+
+.text-black {
+    position: relative;
+    width: 40%;
+    padding: 50px 50px 50px 50px;
+}
+
+.related-cntn {
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    background-color: white;
+    position: relative;
+    height: 208vh;
+    width: 100%;
+    margin-bottom: 750px;
+}
+
+.related-cntn .container .title-2 {
+    display: flex;
+    align-items: center;
+    gap: 560px;
+}
+
+.for-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.second-img img {
+    border-radius: 15px 15px 0px 0px;
+    height: 150px;
+    object-fit: cover;
+    width: 1557px;
+   
+}
+
+.for-card-1 {
+    background-color: #f1f1f1;
+}
+
+.single-blog {
+    width: 325px;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+   
+}
+
+.single-blog .blog-text {
+    padding: 25px;
+}
+
+.blog-title a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.blog-title a:hover {
+    color: var(--primary-color);
+    text-decoration: none !important;
+}
+
+.blog-text span {
+    font-size: 12px;
+    font-weight: 800;
+    font-family: 'Exo', sans-serif;
+    color: var(--secondary-color);
+}
+.read {
+    color: black;
+    text-decoration: none;
+    opacity: 1;
+}
+.read:hover{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.blog-text .our-guide p{
+    height: 180px;
+}
+.our-guide p::selection{
+    color: var(--secondary-color);
+    background-color: whitesmoke;
+}
+.title-2 h2::selection{
+    color: var(--secondary-color);
+    background-color: whitesmoke;
+
+}
+.title-2 span::selection{
+    color: var(--secondary-color);
+    background-color: whitesmoke;
+
 }
