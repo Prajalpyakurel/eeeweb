@@ -16,8 +16,63 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.loading_for_right{
+    animation: imageloading linear 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+@keyframes imageloading  {
+    0%   { right:-1000px; top:0px;}
+    100% {
+         right:-20px; top:0px;
+    }
+}
+.dropdown{
+    position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 0px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown:hover .dropdown-content {display: block;}
+.loading_for_left{
+    animation: loadingleft linear 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position: relative;
 
+}
+@keyframes loadingleft  {
+    0%   { left:-1000px; top:0px;}
+    100% {
+         left:0px; top:0px;
+    }
+}
 /*button*/
 .boton {
     width: 200px;
@@ -829,6 +884,7 @@ p.awesome_line {
     display: flex;
     width: fit-content;
     animation: scrolling 200s linear infinite;
+    
 }
 
 .team-member {
@@ -1489,7 +1545,7 @@ body .form-group:not(:last-child) {
     background-position: center;
     /* Adjust this based on your preference */
     width: 100%;
-    height: 15vh;
+    height: 25vh;
     background-color: var(--secondary-color);
 
     /* You may need to add additional styles for positioning and styling */
@@ -1506,7 +1562,7 @@ body .form-group:not(:last-child) {
 
 .centered {
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;

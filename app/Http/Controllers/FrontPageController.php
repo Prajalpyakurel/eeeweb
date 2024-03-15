@@ -20,4 +20,8 @@ class FrontPageController extends Controller
     {
         return view('website.pages.service');
     }
+    public function digital()
+    {
+        return view('website.pages.digitalmarketing');
+    }
 }

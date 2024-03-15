@@ -5,14 +5,14 @@
     <div class="top_banner">
         <img src="{{asset('background.jpg')}}"  alt="" width="100%">
         <div class="centered">
-            <h1>About Us</h1>
+            <h1 style="font-size: 60px; font-weight:800;">About Us</h1>
             <p>Home > About Us</p>
         </div>
 
     </div>
     <!--    Our Story Section-->
     <div class="our-story-section" style=" background-color: var(--soft-white);">
-        <div class="our-story-left  mt-3 ">
+        <div class="our-story-left  mt-3 loading_for_left">
             <div class="our-story-content">
 {{--                <h1>Our Story</h1>--}}
                 <h1>Welcome to EEE Innovation Ghar </h1>
@@ -29,17 +29,17 @@
                 {{--                <a href="#">Learn More</a>--}}
             </div>
         </div>
-        <div class="our-story-right">
+        <div class="our-story-right loading_for_right">
             <img src="{{asset('our-story.png')}}" alt="" height="400" width="400">
 
         </div>
     </div>
     <div class="our-story-section" style=" background-color: var(--soft-white); ">
-        <div class="our-story-left">
+        <div class="our-story-left loading_for_left">
             <img src="{{asset('our-story.png')}}" alt="" height="400" width="400">
 
         </div>
-        <div class="our-story-right">
+        <div class="our-story-right loading_for_right">
             <div class="our-story-content">
                 <h1>Our Vision</h1>
                 <p>
@@ -155,7 +155,7 @@
         <div class="items row">
             <div class="col-lg-4">
                 <div class="testimonials-title">
-                    <h2 class="title">Our Students Review</h2>
+                    <h2 class="title">Our Clients Review</h2>
                     <span class="line"></span>
                     <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need desire to obtain
                         pain of itself, because it is pain de sires to obtain pain of itself occur</p>

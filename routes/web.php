@@ -58,5 +58,6 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
 Route::get('/', [FrontPageController::class, 'index'])->name('home');
 Route::get('/about', [FrontPageController::class, 'about'])->name('aboutus');
 Route::get('/service', [FrontPageController::class, 'service'])->name('service');
+Route::get('/digital', [FrontPageController::class, 'digital'])->name('digitalmarketing');
 
 
