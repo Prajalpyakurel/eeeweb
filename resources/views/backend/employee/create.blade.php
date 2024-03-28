@@ -7,7 +7,7 @@
 
             <h6 class="card-title">Add Employee</h6>
 
-            <form class="forms-sample" method="POST" action="{{route('admin.storeemployee')}}">
+            <form class="forms-sample" method="POST" action="{{route('admin.storeemployee')}}" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>

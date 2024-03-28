@@ -14,40 +14,40 @@
         <div class="team-container" style=" background-color: var(--soft-white); ">
             <div class="team-members" id="teamMembers">
                 <!-- Team members go here -->
-                <div class="team-member">Social Media Marketing (SMM)</div>
-                <div class="team-member">Search Engine Marketing(SEM)</div>
-                <div class="team-member">Search Engine Optimization (SEO)</div>
-                <div class="team-member">Content Marketing</div>
-                <div class="team-member">Email Marketing</div>
-                <div class="team-member">Affiliate Marketing</div>
-                <div class="team-member">Influencer Marketing</div>
-                <div class="team-member">Viral Marketing</div>
-                <div class="team-member">Mobile Advertising</div>
-                <div class="team-member">Video Marketing</div>
-                <div class="team-member">SMS Marketing</div>
-                <div class="team-member">App Store Optimization</div>
-                <div class="team-member">Display Advertising</div>
-                <div class="team-member">E-commerce Marketing</div>
-                <div class="team-member">Content Automation</div>
-                <div class="team-member">Marketing Automation</div>
-                <div class="team-member">Data-driven Marketing</div>
-                <div class="team-member">Campaign Marketing</div>
-                <div class="team-member">Social Media Optimization</div>
-                <div class="team-member">Social Media Management</div>
-                <div class="team-member">Social Media Advertising</div>
-                <div class="team-member">Pay-per-click Advertising</div>
-                <div class="team-member">Google Ads</div>
-                <div class="team-member">Facebook Ads</div>
-                <div class="team-member">Instagram Ads</div>
-                <div class="team-member">LinkedIn Ads</div>
-                <div class="team-member">Twitter Ads</div>
-                <div class="team-member">Pinterest Ads</div>
-                <div class="team-member">Snapchat Ads</div>
-                <div class="team-member">TikTok Ads</div>
-                <div class="team-member">YouTube Ads</div>
-                <div class="team-member">Reddit Ads</div>
-                <div class="team-member">Quora Ads</div>
-                <div class="team-member">Bing Ads</div>
+                <div class="team-member card">Social Media Marketing (SMM)</div>
+                <div class="team-member card">Search Engine Marketing(SEM)</div>
+                <div class="team-member card">Search Engine Optimization (SEO)</div>
+                <div class="team-member card">Content Marketing</div>
+                <div class="team-member card">Email Marketing</div>
+                <div class="team-member card">Affiliate Marketing</div>
+                <div class="team-member card">Influencer Marketing</div>
+                <div class="team-member card">Viral Marketing</div>
+                <div class="team-member card">Mobile Advertising</div>
+                <div class="team-member card">Video Marketing</div>
+                <div class="team-member card">SMS Marketing</div>
+                <div class="team-member card">App Store Optimization</div>
+                <div class="team-member card">Display Advertising</div>
+                <div class="team-member card">E-commerce Marketing</div>
+                <div class="team-member card">Content Automation</div>
+                <div class="team-member card">Marketing Automation</div>
+                <div class="team-member card">Data-driven Marketing</div>
+                <div class="team-member card">Campaign Marketing</div>
+                <div class="team-member card">Social Media Optimization</div>
+                <div class="team-member card">Social Media Management</div>
+                <div class="team-member card">Social Media Advertising</div>
+                <div class="team-member card">Pay-per-click Advertising</div>
+                <div class="team-member card">Google Ads</div>
+                <div class="team-member card">Facebook Ads</div>
+                <div class="team-member card">Instagram Ads</div>
+                <div class="team-member card">LinkedIn Ads</div>
+                <div class="team-member card">Twitter Ads</div>
+                <div class="team-member card">Pinterest Ads</div>
+                <div class="team-member card">Snapchat Ads</div>
+                <div class="team-member card">TikTok Ads</div>
+                <div class="team-member card">YouTube Ads</div>
+                <div class="team-member card">Reddit Ads</div>
+                <div class="team-member card">Quora Ads</div>
+                <div class="team-member card">Bing Ads</div>
 
 
             </div>
@@ -59,7 +59,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6 pe-4">
+                <div class="col-lg-6 pe-4 digital">
                     <div class="title-2">
                         <h2> About <span>Digital Marketing</span></h2>
                     </div>
@@ -83,9 +83,14 @@
                             experiences, and driving sustainable growth in the modern business era.
                         </p>
                     </div>
-                    <div class="speak-btn">
-                        <a href="#" class="main-btn">Speak to our expert
+                    {{-- <div class="speak-btn">
+                        <a href="#" class="main-btn">
                             <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                    </div> --}}
+                    <div class="button-group">
+                        <a href="#" class="boton">
+                            Speak to our expert<i class="fa-solid fa-angle-down fa-bounce"></i>
                         </a>
                     </div>
                 </div>
@@ -105,30 +110,31 @@
     <section class="innovation-services">
         <div class="container">
             <div class="title-2 pb-5">
-                <h2>Discover our full range of innovation services</h2>
+                <h2>Take our Services and Make your ROI</h2>
             </div>
-            <div class="for-card-1st ">
+            <div class="for-card-1st digital">
                 <div class="flex-content d-flex">
                     <div class="first-img">
                         <img src="{{ asset('medium.png') }}" alt="" height="180" width="190">
                     </div>
                     <div class="first-content">
                         <div class="title-2">
-                            <h2>Innovation Consulting</h2>
+                            <h2>Social Media Marketing (SMM)</h2>
                         </div>
                         <div class="our-guide">
                             <p>
-                                Our consulting team will join your innovation project or transformation process to fully
-                                embrace your challenges. With unparalleled expertise at the intersection of business
-                                intelligence, market analytics, IP, and scientific knowledge, they are the missing link
-                                needed to align your innovation processes with your overall strategy and deliver actionable
-                                recommendations for a successful future.
+                                EEE Innovation Ghar elevates your brand’s digital presence with comprehensive Social Media
+                                Marketing (SMM) services. Our expert team crafts tailored strategies to engage your
+                                audience, amplify your message, and drive growth. Leveraging the latest trends and
+                                analytics, we ensure your brand stands out in the bustling social media landscape. From
+                                creative content creation to targeted ad campaigns, EEE Innovation Ghar is your partner in
+                                navigating the social media world. Connect with us to transform your social media journey
+                                into a success story.
                             </p>
                         </div>
-                        <div class="speak-btn">
-                            <a href="#" class="main-btn">
-                                <i class="fa-solid fa-arrow-right pe-2"></i>
-                                Find Out More
+                        <div class="button-group">
+                            <a style="color: white" href="#" class="boton">
+                                Speak to our expert<i class="fa-solid fa-angle-down fa-bounce"></i>
                             </a>
                         </div>
                     </div>
@@ -136,21 +142,21 @@
             </div>
             <div class="second-card ">
                 <div class="flex-content d-flex">
-                    <div class="first-content">
+                    <div class="first-content digital">
                         <div class="title-2">
-                            <h2 style="color: var(--primary-color)">Operational Services</h2>
+                            <h2 style="color: var(--primary-color)">Search Engine Optimization (SEO)</h2>
                         </div>
                         <div class="our-guide">
-                            <p>In-depth collaboration across company boundaries can be the key to successful innovation and
-                                competitive advantage. To efficiently and quickly scale such collaborative efforts, our
-                                international team of experts can support your operations in various ways: identifying
-                                potential partners, engaging them in collaboration projects, conducting exploratory
-                                interviews, evaluating emerging technologies, and more.</p>
+                            <p>At EEE Innovation Ghar, we specialize in elevating your website’s visibility with our Search
+                                Engine Optimization (SEO) services. Our approach includes meticulous keyword research,
+                                on-page optimization, and authoritative link-building strategies. We focus on driving
+                                relevant traffic and improving search rankings to connect you with your target audience.
+                                Trust in our expertise to boost your online presence and ensure your business thrives in the
+                                digital landscape. Partner with us for SEO solutions that deliver measurable results.</p>
                         </div>
-                        <div class="speak-btn">
-                            <a href="#" class="main-btn">
-                                <i class="fa-solid fa-arrow-right pe-2"></i>
-                                Find Out More
+                        <div class="button-group">
+                            <a style="color: white" href="#" class="boton">
+                                Speak to our expert<i class="fa-solid fa-angle-down fa-bounce"></i>
                             </a>
                         </div>
 
@@ -163,29 +169,41 @@
             <div class="for-card-1st ">
                 <div class="flex-content d-flex">
                     <div class="first-img">
-                        <img src="{{ asset('mimi.png') }}" alt="" height="180" width="190">
+                        <img src="{{ asset('mimi.png') }}" alt="" style="height: 508px; width: 1312px;">
                     </div>
                     <div class="first-content">
                         <div class="title-2">
-                            <h2>Naming</h2>
+                            <h2>What We Offer?</h2>
                         </div>
                         <div class="our-guide">
                             <p>
-                                Our naming service provides a single end-to-end solution that ensures cost- and
-                                time-efficient delivery of new names for new products and services, based on market research
-                                and IP analysis. With decades of experience, we deliver exactly the naming services that
-                                clients are seeking in fast-growing markets and industries. </p>
+                                EEE Innovation Ghar offers a comprehensive suite of digital marketing services tailored to
+                                elevate your brand’s online presence. Our expertise spans content marketing, where we create
+                                engaging narratives that resonate with your audience, and email marketing, with personalized
+                                campaigns designed to nurture leads. We harness the power of affiliate and influencer
+                                marketing to expand your brand’s reach, while our viral and mobile advertising strategies
+                                ensure your content is shared widely. </p>
+                            <p>Our video and SMS marketing initiatives engage customers through dynamic and interactive
+                                media. We optimize your visibility in app stores and through display advertising, ensuring
+                                you’re seen by those who matter most. For e-commerce businesses, we streamline the online
+                                sales process with content automation, and our marketing automation and data-driven
+                                strategies are informed by analytics for maximum impact.</p>
+                            <p>Campaign marketing and social media optimization are key to our approach, maximizing your
+                                impact across various platforms. We manage your social media presence, building robust
+                                communities, and provide targeted advertising solutions, including pay-per-click and
+                                platform-specific ads, covering everything from Google to TikTok. With EEE Innovation Ghar,
+                                you can expect a results-driven approach that propels your brand to new heights</p>
                         </div>
-                        <div class="speak-btn">
+                        {{-- <div class="speak-btn">
                             <a href="#" class="main-btn">
                                 <i class="fa-solid fa-arrow-right pe-2"></i>
                                 Find Out More
                             </a>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
-            <div class="second-card ">
+            {{-- <div class="second-card ">
                 <div class="flex-content d-flex">
                     <div class="first-content">
                         <div class="title-2">
@@ -235,35 +253,94 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
     {{-- end-innovation-services --}}
+    <div class="plan container">
 
-    {{-- start-innovation-img --}}
-    <section class="slide-3">
-        <div class="container">
-            <div class="full-slide">
-                <div class="slide-img">
-                    <img src="{{ asset('hand.png') }}" alt="">
-                </div>
-                <div class="text-black">
-                    <div class="title-2">
-                        <h2>Innovation Services <span>that Make a Difference</span></h2>
-                    </div>
-                    <div class="our-guide">
-                        <p>With years of experience in innovation consulting, IP services, and innovation management tools,
-                            Questel has the know-how to help you innovate. Our innovation services not only individual
-                            projects, but can also help you build lasting innovation programs, a corresponding software
-                            landscape, and make the critical intersections to IP and patents. Whatever your needs, we will
-                            partner with and support you at every step of your innovation journey.</p>
-                    </div>
-                </div>
+        <h1>Choose your plan</h1>
+        <div class="card-container">
+            <div class="card">
+                <div class="offer-title">Silver Package</div>
+                {{-- <p class="offer-description">For beginners.</p> --}}
+                <p class="offer-price"> 14999/-</p>
+                <button class="buy">Buy now</button>
+                <hr>
+                <ul>
+                    <li>Planning & Strategy</li>
+                    <li>Research, Analysis & Consulting </li>
+                    <li>Creating SEO & User Engaging Post Caption</li>
+                    <li>Scheduling & Publishing Post</li>
+                    <li>Automated Response Handling</li>
+                    <li>Festive Pos</li>
+                    <li>6 Creative Graphic Post Per Month</li>
+                    <li>60$ Boosting Per Month</li>
+                    <li>Facebook,Instagram,Meta Ads Management</li>
+                    <li>Monthly Reporting</li>
+
+                </ul>
             </div>
-            <hr>
+            <div class="card recommended-offer">
+                <div class="offer-title">Golden Package</div>
+                {{-- <p class="offer-description">For professionals.</p> --}}
+                <p class="offer-price"> 24999/-</p>
+                <button class="buy">Buy now</button>
+                <hr>
+                <ul>
+                    <li> Planning & Strategy</li>
+                    <li> Research, Analysis & Consulting</li>
+                    <li> Creating SEO & User Engaging Post Caption</li>
+                    <li> Scheduling & Publishing Post</li>
+                    <li> Automated Response Handling</li>
+                    <li> Festive Post</li>
+                    <li> 9 Creative Graphic Post Per Month</li>
+                    <li> 1 Gif Video</li>
+                    <li> 90$ Boosting Per Month</li>
+                    <li> Facebook,Meta Add, Instagram  Management</li>
+                    <li> Monthly Reporting</li>
+
+                </ul>
+            </div>
+            <div class="card">
+                <div class="offer-title">Diamond Package</div>
+                {{-- <p class="offer-description">.</p> --}}
+                <p class="offer-price">39999/-</p>
+                <button class="buy">Buy now</button>
+                <hr>
+                <ul>
+                   <li> Planning & Strategy </li>
+                   <li> Research, Analysis & Consulting</li>
+                   <li> Creating SEO & User Engaging Post Caption</li>
+                   <li> Scheduling & Publishing Post</li>
+                   <li> Automated Response Handling</li>
+                  <li>  Festive Post</li>
+                  <li>  12 Creative Graphic Post Per Month</li>
+                   <li> 1 Gif Video</li>
+                   <li> 1 Motion Graphics Video</li>
+                   <li> 120$ Boosting Per Month</li>
+                   <li> Facebook,Meta Add, Instagram  Management</li>
+                   <li> Monthly Reporting</li>
+
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="offer-title">Premium</div>
+                <p class="offer-description">For companies.</p>
+                <p class="offer-price">40</p>
+                <button class="buy">Buy now</button>
+                <hr>
+                <ul>
+                    <li>Unlimited images</li>
+                    <li>All formats</li>
+                    <li>Use without attribution</li>
+                    <li>Edit color, background...</li>
+                </ul>
+            </div>
         </div>
-    </section>
-    {{-- end-innovation-img --}}
+    </div>
+
 
     {{-- start-resources --}}
     <section class="related-cntn">
@@ -366,6 +443,7 @@
                         </a>
                     </div>
                 </div>
+
             </div>
 
         </div>

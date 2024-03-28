@@ -37,9 +37,9 @@
                             actually doing it.
                         </p>
                     </div>
-                    <div class="speak-btn">
-                        <a href="#" class="main-btn">Speak to our expert
-                            <i class="fa-solid fa-angle-down"></i>
+                    <div class="button-group">
+                        <a href="#" class="boton">
+                            Explore<i class="fa-solid fa-angle-down fa-bounce"></i>
                         </a>
                     </div>
                 </div>

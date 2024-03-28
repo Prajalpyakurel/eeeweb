@@ -24,4 +24,8 @@ class FrontPageController extends Controller
     {
         return view('website.pages.digitalmarketing');
     }
+    public function contact()
+    {
+        return view('website.pages.contact');
+    }
 }

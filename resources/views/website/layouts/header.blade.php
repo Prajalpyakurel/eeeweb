@@ -18,7 +18,7 @@
                     
                     </li>
                     <li><a href="#">About</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="{{route('contactus')}}">Contact</a></li>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
                 </span>
         <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>

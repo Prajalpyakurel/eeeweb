@@ -80,6 +80,10 @@ body {
     display: block;
     position: relative;
 }
+.digital .boton{
+    width: 300px !important;
+    color: #fff !important;
+}
 
 .botontext {
     position: absolute;
@@ -2134,10 +2138,10 @@ h6 {
 .innovation-services {
     overflow: hidden;
     padding-top: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     background-color: white;
     position: relative;
-    height: 308vh;
+    height: 184vh;
 }
 
 .for-card-1st {
@@ -2205,7 +2209,7 @@ h6 {
     padding-bottom: 100px;
     background-color: white;
     position: relative;
-    height: 208vh;
+    /* height: 208vh; */
     width: 100%;
     margin-bottom: 750px;
 }
@@ -2289,4 +2293,204 @@ h6 {
     color: var(--secondary-color);
     background-color: whitesmoke;
 
+}
+ul {
+    list-style-image: url(https://nsa40.casimages.com/img/2021/02/22/210222044032516304.png);
+    transform: translateX(15.5px);
+    text-align: left;
+}
+
+hr {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border: none;
+    border-radius: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Cards */
+.plan{
+   background-color: rgb(255, 255, 255);
+}
+.plan ul,ol{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.plan h1 {
+    margin-bottom: 35px;
+    font-size: 3.5rem;
+    color:var(--primary-color);
+}
+.plan .card-container li {
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.plan .card-container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 21px 24px; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . ."; 
+   
+}
+
+ .plan .card {
+    width: 90%;
+    
+    background-color: #8a8a8a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 15px 0;
+    border-radius: 25px;
+    box-shadow: 0 10px 12px 3px rgba(0, 0, 0, .25), inset 0 0px 3px 1px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    cursor: default;
+    transition: transform .35s, width .35s;
+}
+
+.plan .card:hover {
+    transform: scale(1.08);
+}
+
+.plan .card:nth-child(1) {
+    background-image: linear-gradient(to bottom left, #41f6a9, #027118);
+}
+.plan .card:nth-child(2) {
+    background-image: linear-gradient(to bottom, #ff5900, #eba41f);
+}
+.plan .card:nth-child(3) {
+    background-image: linear-gradient(to bottom right, #3cb5f5, #0c2879);
+}
+
+.plan .card * {
+    text-shadow: 0 3px 6px rgba(0, 0, 0, .2);
+}
+.plan .card hr {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
+}
+
+.plan .offer-title {
+    font-size: 2em;
+    color: white;
+}
+
+.plan .offer-title, .buy {
+    text-transform: uppercase;
+}
+
+.plan .card:not(.recommended-offer) {
+    margin-top: 45px;
+}
+
+.plan .recommended-offer {
+    padding-top: 60px;
+    position: relative;
+}
+
+.plan .recommended-offer::before {
+    line-height: 30px;
+    content: "RECOMMENDED";
+    position: absolute;
+    top: 17.5px;
+    width: 100%;
+    color: black;
+    background-color: white;
+    mix-blend-mode: screen;
+}
+ .plan .recommended-offer::after {
+    content: "";
+    height: 30px;
+    position: absolute;
+    top: 17.5px;
+    width: 100%;
+    box-shadow: 0 0 6px 6px rgba(0, 0, 0, .2), inset 0 0 5px 2px rgba(0, 0, 0, .15);
+}
+
+.plan .offer-price {
+    font-size: 4.2em;
+    position: relative;
+    color: var(--primary-color);
+}
+
+.plan .offer-price::before {
+    content: "Rs.";
+    font-size: .4em;
+    position: absolute;
+    top: 0;
+    right: 105%;
+    right: calc(100% + 7px);
+}
+
+.plan .offer-price::after {
+    content: "/month";
+    font-size: .2em;
+    position: absolute;
+    bottom: 18px;
+    left: 105%;
+    left: calc(100% + 3px);
+}
+
+.plan .buy {
+    color: black;
+    background-color: white;
+    mix-blend-mode: screen;
+    padding: 15px 30px;
+    border-radius: 1000px;
+}
+
+.plan .offer-price, hr {
+    margin: 20px 0;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .plan .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan .card {
+        width: 85%;
+        margin: 15px 0 !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .plan .card {
+        width: 50%;
+    }
+   .plan footer {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+   .plan .card-container {
+        width: 100%;
+    }
+   .plan .card {
+        width: 100%;
+        min-width: 200px;
+    }
 }

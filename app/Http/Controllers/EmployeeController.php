@@ -34,11 +34,11 @@ class EmployeeController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request);
-           // Validate request
-           $request->validate([
+        // Validate request
+        $request->validate([
             'name' => 'required',
             'designation' => 'required',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif', // Add validation rules for the image
         ]);
 
         // Store employee
@@ -47,20 +47,21 @@ class EmployeeController extends Controller
         $employees->designation = $request->input('designation');
         $employees->about = $request->input('about');
         $employees->email = $request->input('email');
-         
-         // Handle file upload (if applicable)
-    if ($request->hasFile('image')) {
-        $image = $request->file('image');
-        $fileName = time() . '.' . $image->getClientOriginalExtension();
-        $image->move(public_path('images'), $fileName);
-        $employees->image = $fileName;
-    }
-   
-    $employees->save();
-    
 
-    return redirect()->route('admin.employee');
+        // Handle file upload (if applicable)
+        if ($request->hasAny('image')) {
+            $image = $request->file('image');
+            $fileName = time() . '.' . $image->getClientOriginalExtension();
+            $image->move(public_path('images'), $fileName); // Move the uploaded file to a public directory
+            $employees->image = $fileName; // Store the file name in the database
+        }
+
+        // Save the employee record
+        $employees->save();
+
+        return redirect()->route('admin.employee');
     }
+
 
     /**
      * Display the specified resource.
